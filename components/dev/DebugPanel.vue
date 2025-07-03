@@ -56,12 +56,12 @@
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import { useRoute } from 'vue-router'
 import { useHostAppStore } from '@/store/hostApp'
-import { useAccountsStore } from '@/store/accounts'
+import { useAccountStore } from '@/store/accounts'
 import { useSelectionStore } from '@/store/selection'
 
 const route = useRoute()
 const hostApp = useHostAppStore()
-const accounts = useAccountsStore()
+const accounts = useAccountStore()
 const selection = useSelectionStore()
 
 const isExpanded = ref(true)
@@ -135,12 +135,12 @@ onBeforeUnmount(() => {
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import { useRoute } from 'vue-router'
 import { useHostAppStore } from '@/store/hostApp'
-import { useAccountsStore } from '@/store/accounts'
+import { useAccountStore } from '@/store/accounts'
 import { useSelectionStore } from '@/store/selection'
 
 const route = useRoute()
 const hostApp = useHostAppStore()
-const accounts = useAccountsStore()
+const accounts = useAccountStore()
 const selection = useSelectionStore()
 
 const isExpanded = ref(true)
@@ -214,12 +214,12 @@ onBeforeUnmount(() => {
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import { useRoute } from 'vue-router'
 import { useHostAppStore } from '@/store/hostApp'
-import { useAccountsStore } from '@/store/accounts'
+import { useAccountStore } from '@/store/accounts'
 import { useSelectionStore } from '@/store/selection'
 
 const route = useRoute()
 const hostApp = useHostAppStore()
-const accounts = useAccountsStore()
+const accounts = useAccountStore()
 const selection = useSelectionStore()
 
 const isExpanded = ref(true)
@@ -293,12 +293,12 @@ onBeforeUnmount(() => {
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import { useRoute } from 'vue-router'
 import { useHostAppStore } from '@/store/hostApp'
-import { useAccountsStore } from '@/store/accounts'
+import { useAccountStore } from '@/store/accounts'
 import { useSelectionStore } from '@/store/selection'
 
 const route = useRoute()
 const hostApp = useHostAppStore()
-const accounts = useAccountsStore()
+const accounts = useAccountStore()
 const selection = useSelectionStore()
 
 const isExpanded = ref(true)

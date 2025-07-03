@@ -1,5 +1,9 @@
 <template>
   <div class="relative min-h-screen flex flex-col">
+    <!-- LOCAL DEVELOPMENT INDICATOR -->
+    <div v-if="isDevelopment" class="bg-red-600 text-white text-center py-2 font-bold text-lg z-50">
+      🚨 LOCAL DEVELOPMENT MODE - PORT 3000 🚨
+    </div>
     <HeaderNavBar />
     <main class="flex-1 px-1 max-[275px]:px-0" :class="hasNoModelCards ? '' : 'mt-10'">
       <slot />
@@ -35,4 +39,7 @@ const { toggleTheme } = uiConfigStore
 
 const hostApp = useHostAppStore()
 const hasNoModelCards = computed(() => hostApp.projectModelGroups.length === 0)
+
+// Development mode detection
+const isDevelopment = process.dev
 </script>

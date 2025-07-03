@@ -202,12 +202,12 @@
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useDebugStore } from '@/store/debug'
 import { useHostAppStore } from '@/store/hostApp'
-import { useAccountsStore } from '@/store/accounts'
+import { useAccountStore } from '@/store/accounts'
 import { useSelectionStore } from '@/store/selection'
 
 const debugStore = useDebugStore()
 const hostApp = useHostAppStore()
-const accounts = useAccountsStore()
+const accounts = useAccountStore()
 const selection = useSelectionStore()
 
 const activeTab = ref<'errors' | 'bridge' | 'state' | 'performance'>('bridge')
