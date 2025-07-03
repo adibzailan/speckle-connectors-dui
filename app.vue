@@ -7,6 +7,8 @@
     <Teleport to="body">
       <SingletonToastManager />
     </Teleport>
+    <!-- Debug panel - only rendered when debug mode is enabled -->
+    <DebugPanel />
   </div>
 </template>
 <script setup lang="ts">
